@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: auto;
+    background-color: azure;
+}
+
+.cont{
+    margin-top: 50px;
+    text-align: center;
+    display: inline-grid;
+    margin-left: 30%;
+}
+
+#main_input{
+    height: 50px;
+    width: 390px;
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+#checkboxes{
+    /*height: 50px;*/
+    /*width: 50px;*/
+    background-color: white;
+}
+
+.view{
+    min-height: 50px;
+    width: 450px;
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    border: 2px solid grey;
+    border-image: initial;
+    position: relative;
+    border-top:none;
+    word-break: break-all;
+}
+.view2{
+    min-height: 50px;
+    width: 450px;
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    border: 2px solid grey;
+    border-image: initial;
+    position: relative;
+    border-top:none;
+    word-break: break-all;
+}
+ul li:first-child{
+    border-top: 2px solid grey;
+}
+.view p{
+    font-size: 33px;
+    margin-left: 40px;
+}
+
+.remove{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.remove::after{
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    font-size: larger;
+    background-image: url(../media/del.png);
+    background-size: 30px 30px;
+    display: inline-block;
+    content: "";
+
+}
+
+.view:hover .remove{
+
+    display: inline-block;
+}
+
+.lbl{
+    position: relative;
+}
+
+.lbl::before{
+    background-image: url("../media/selectAll.png");
+    left: 5px;
+    bottom: -15px;
+    content: '';
+    position: absolute;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+}
+.toogle{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+.filters li{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.filters li:first-child{
+    position: absolute;
+    left: 10px;
+    border: none;
+    cursor: default;
+}
+.all{
+    left: 130px;
+}
+.active{
+    left: 180px;
+}
+.completed{
+    right: 125px;
+}
+.filter-clear{
+    position: inherit!important;
+    float: right;
+    top: -42px!important;
+    right: 15px;
+    cursor: pointer;
+}
+
+.add-todo{
+    position: relative;
+}
+
+/*.foot{*/
+/*    position: absolute;*/
+/*    right: 25px;*/
+/*    bottom: 25px;*/
+/*    cursor: pointer;*/
+/*}*/
+.transparent{
+    color: darkgray;
+}
+
+.filter{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+}
+#selected{
+    border: 1px solid !important;
+    padding: 0 5px;
+}
